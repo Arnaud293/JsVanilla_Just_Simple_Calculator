@@ -1,0 +1,49 @@
+body{
+    background-color: beige;
+}
+.app{
+    width: 400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 50px repeat(5, auto);
+    grid-template-areas:     "result result result result"    "7 8 9 clear"    "4 5 6 clear"    "1 2 3 clear"    "0 dot plus minus"    "equal equal times div ";
+    border: 3px solid darkred;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+h3{
+    text-align: right;
+    grid-area: result;
+    margin: 7px 10px 0 0;
+    font-size: 2rem;
+}
+
+button{
+    min-height: 35px;
+    color: white;
+    background-color: darkred;
+    border: 1px solid gray;
+    padding: 1px;
+    margin: 1px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+button:hover{
+    background-color: rgb(159, 21, 21);
+    cursor: pointer;
+}
+
+#clear{
+    grid-area: clear;
+}
+#equal{
+    grid-area: equal;
+}
